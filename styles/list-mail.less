@@ -1,0 +1,29 @@
+.column-ThreadList {
+  padding: 10px;
+}
+
+.thread-list .scroll-region {
+  box-shadow: @shadow;
+  // border-radius: 10px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.list-container .list-item:hover {
+  background: #fff;
+  color: @text-color-link-hover;
+}
+
+.thread-list .list-item:not(.unread):not(.selected):not(.focused) {
+  color: #646464 !important;
+}
+
+.thread-list .unread:not(.focused):not(.selected):not(.next-is-selected),
+.draft-list .unread:not(.focused):not(.selected):not(.next-is-selected) {
+  border-bottom: 1px solid #aaa;
+}
+
+.thread-list .list-item,
+.draft-list .list-item {
+  border-bottom: 1px solid #aaa;
+}
