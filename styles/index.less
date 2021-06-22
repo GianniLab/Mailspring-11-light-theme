@@ -15,6 +15,8 @@ stylesheets can call `@import "ui-variables";` and reference it.
 @import "list-mail";
 @import "message-view";
 @import "message-info-sidebar";
+@import "preferences";
+@import "custom-icons";
 
 /*
 After changing variables to set a base for our theme, we can use
@@ -28,11 +30,15 @@ here, so you can use modern CSS like -webkit-filter and -webkit-mask-image
 (which is used to make most of the icons in the app styleable via a
 background color.)
 */
+body {
+  font-family: 'Google Sans' !important;
+}
 
 .column-ThreadList,
 .column-MessageList,
 .column-MessageListSidebar {
   background: @background-primary;
+  font-family: @font;
 }
 
 .thread-icon:not(.thread-icon-unread):not(.thread-icon-star) {
@@ -64,21 +70,17 @@ img.content-light {
   background: @background;
 }
 
-.btn img.content-mask {
-  filter: contrast(1);
+.sheet-toolbar .btn-toolbar img.content-mask {
+  background-color: #aaa;
 }
 
 button.btn.btn-toolbar:hover img {
-  background-color: darkblue;
+  background-color: #333333;
   filter: none;
 }
 
 button.btn.btn-toolbar:hover {
   background: inherit !important;
-}
-
-.thread-search-bar {
-  background: #ddd;
 }
 
 select {
@@ -111,4 +113,27 @@ select {
 .notifications {
   background-color: inherit;
   box-shadow: none;
+}
+
+button[title~=Archive] {
+  color: #000;
+  background: #333333;
+}
+
+element.style {
+  height: 84px;
+}
+
+iframe {}
+
+#message-list .message-iframe-container iframe #inbox-html-wrapper {
+  font-weight: 300 !important;
+}
+
+body #inbox-html-wrapper {
+  font-weight: 100 !important;
+}
+
+.heading span:first-child {
+  font-weight: 700;
 }

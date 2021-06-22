@@ -1,19 +1,19 @@
-.column-RootSidebar,
-.account-sidebar {
+.column-RootSidebar {
   background: @background;
+  box-shadow: 0 0 4px rgba(4, 4, 4, 0.67);
+  z-index: 1;
+  font-family: @font;
 }
 
-.outline-view .item {
-  color: #fff;
+.outline-view .item,
+.outline-view .heading {
+  color: @gray;
 }
 
 .outline-view .item img.content-mask {
-  background-color: #fff;
+  background-color: @gray;
 }
 
-.outline-view .heading {
-  color: #dcdcdc;
-}
 
 .outline-view .item.selected {
   background: inherit;

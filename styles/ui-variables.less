@@ -4,21 +4,25 @@ https://github.com/Foundry376/Mailspring/blob/master/app/static/style/base/ui-va
 */
 @import "base/ui-variables";
 
-@gray-base: #ffffff;
-@gray-darker: darken(@gray-base, 13.5%);
-@gray-dark: darken(@gray-base, 20%);
-@gray: darken(@gray-base, 33.5%);
-@gray-light: darken(@gray-base, 46.7%);
-@gray-lighter: darken(@gray-base, 92.5%);
+@font-face {
+  font-family: @font;
+  font-weight: 300;
+  src: url();
+}
+
+@font: 'Google Sans';
+
+@gray: #dcdcdc;
+@gray-light: lighten(@gray, 7%);
 @white: #fff;
 
-@accent-primary: #3CA4C7;
+@accent-primary: #50CEFF;
 @accent-primary-dark: darken(@accent-primary, 10%);
 
 @background-primary: #fff;
-@background-off-primary: #212121;
+@background-off-primary: #f1f1f1;
 @background-secondary: #fff;
-@background-tertiary: #6d7987;
+@background-tertiary: #f3f3f3;
 
 @border-color-primary: lighten(@background-primary, 10%);
 @border-color-secondary: lighten(@background-secondary, 10%);
@@ -38,20 +42,21 @@ https://github.com/Foundry376/Mailspring/blob/master/app/static/style/base/ui-va
 @text-color-link-active: @accent-primary-dark;
 
 @btn-default-bg-color: lighten(@background-primary, 5%);
-@dropdown-default-bg-color: #404040;
+@dropdown-default-bg-color: #f3f3f3;
 
-@input-bg: #2e2e2e;
+@input-bg: #fff;
 @input-border: @border-color-divider;
 
-@list-bg: #333;
+@list-bg: #fff;
 @list-border: #383838;
 @list-selected-color: @text-color-inverse;
 @list-focused-color: @text-color;
 
-@toolbar-background-color: #005C7A;
-@panel-background-color: #005C7A;
+@toolbar-background-color: #105B9E;
+@panel-background-color: #105B9E;
 
-@background: #005c7a;
-@background-dark: #013a4c;
+@background: #08355D;
+@background-dark: #0A3D6B;
 
-@shadow: 0 0 5px rgba(4, 4, 4, 0.231);
+
+@shadow: 0 0px 0px rgba(4, 4, 4, 0.4);

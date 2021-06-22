@@ -4,26 +4,52 @@
 
 .thread-list .scroll-region {
   box-shadow: @shadow;
-  // border-radius: 10px;
   overflow: hidden;
-  background: #fff;
 }
 
-.list-container .list-item:hover {
-  background: #fff;
-  color: @text-color-link-hover;
-}
+.list-container .list-rows {
+  background: none;
 
-.thread-list .list-item:not(.unread):not(.selected):not(.focused) {
-  color: #646464 !important;
-}
-
-.thread-list .unread:not(.focused):not(.selected):not(.next-is-selected),
-.draft-list .unread:not(.focused):not(.selected):not(.next-is-selected) {
-  border-bottom: 1px solid #aaa;
 }
 
 .thread-list .list-item,
 .draft-list .list-item {
-  border-bottom: 1px solid #aaa;
+  background: @background-primary;
+
+  padding: 7px 0;
+}
+
+.thread-list .unread:not(.focused):not(.selected):not(.next-is-selected),
+.draft-list .unread:not(.focused):not(.selected):not(.next-is-selected) {
+  border-bottom: 1px solid #dcdcdc;
+}
+
+.thread-list .thread-icon.thread-icon-unread,
+.draft-list .thread-icon.thread-icon-unread {
+  display: none;
+}
+
+.thread-list .list-item,
+.draft-list .list-item {
+  border-bottom: 1px solid #dcdcdc;
+}
+
+.list-container .list-item:hover {
+  background: @gray-light  !important;
+}
+
+.list-container .list-item.focused {
+  background: @gray;
+}
+
+.list-container .list-item.focused .participants-wrapper {
+  font-weight: bold;
+  color: @accent-primary-dark;
+  font-style: italic;
+}
+
+.thread-list-narrow .subject,
+.thread-list-narrow .snippet-and-labels .snippet {
+  font-size: 12.3px;
+  line-height: normal;
 }

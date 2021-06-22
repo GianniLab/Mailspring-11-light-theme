@@ -1,0 +1,70 @@
+@baseurl: "C://Users/giann/AppData/Roaming/Mailspring/packages/11/img";
+
+img[ alt="icon-preferences-general.png"] {
+  //-webkit-mask-image: url("@{iconurl}16-sent.svg"),
+  content: url("@{baseurl}/ico-settings.svg") !important;
+}
+
+img[ alt="icon-preferences-accounts.png"] {
+  //-webkit-mask-image: url("@{iconurl}16-sent.svg"),
+  content: url("@{baseurl}/ico-email-sign.png") !important;
+}
+
+img[ alt="icon-preferences-subscription.png"] {
+  //-webkit-mask-image: url("@{iconurl}16-sent.svg"),
+  content: url("@{baseurl}/ico-customer.png") !important;
+}
+
+img[ alt="icon-preferences-appearance.png"] {
+  //-webkit-mask-image: url("@{iconurl}16-sent.svg"),
+  content: url("@{baseurl}/ico-personalization.png") !important;
+}
+
+img[ alt="icon-preferences-shortcuts.png"] {
+  //-webkit-mask-image: url("@{iconurl}16-sent.svg"),
+  content: url("@{baseurl}/ico-keyboard.png") !important;
+}
+
+img[ alt="icon-preferences-mail-rules.png"] {
+  //-webkit-mask-image: url("@{iconurl}16-sent.svg"),
+  content: url("@{baseurl}/ico-mail-rules.png") !important;
+}
+
+img[ alt="icon-preferences-folders.png"] {
+  //-webkit-mask-image: url("@{iconurl}16-sent.svg"),
+  content: url("@{baseurl}/ico-inbox-settings.png") !important;
+}
+
+img[ alt="icon-preferences-signatures.png"] {
+  //-webkit-mask-image: url("@{iconurl}16-sent.svg"),
+  content: url("@{baseurl}/ico-autograph.png") !important;
+}
+
+img[ alt="icon-preferences-templates.png"] {
+  //-webkit-mask-image: url("@{iconurl}16-sent.svg"),
+  content: url("@{baseurl}/ico-brochure.png") !important;
+}
+
+// .btn.btn-toolbar[title="Delete"]
+.btn.btn-toolbar[title="Crea nuovo messaggio"] {
+  img {
+    content: url("@{baseurl}/ico-composing-mail.png");
+  }
+}
+
+.toolbar-RootSidebar .btn {
+  img {
+    zoom: 1 !important;
+    -webkit-mask-image: none !important;
+    -webkit-mask-repeat: none !important;
+    mask-image: none !important;
+    mask-repeat: none !important;
+    object-position: 0 !important;
+    background: none !important;
+
+    // New properties to be set for the images.
+    height: 24px;
+    background-size: auto !important;
+  }
+
+}
