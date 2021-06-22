@@ -2,7 +2,9 @@
 
 Simple Theme for the [Mailspring](http://www.getmailspring.com/) email client.
 
-<img src="/screenshot/custom-theme.png" />
+<img src="/screenshot/Mailspring · theme - 1.png" />
+
+<img src="/screenshot/Mailspring · theme - 2.png" />
 
 ## Install
 
