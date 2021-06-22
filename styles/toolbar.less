@@ -5,7 +5,7 @@
   box-shadow: @shadow;
   min-height: fit-content;
   font-family: @font;
-  height: 50px !important;
+  height: 52px !important;
 }
 
 .sheet-toolbar-container {
@@ -13,6 +13,9 @@
   // width: inherit !important;
   // position: relative !important;
   // display: block;
+  background: @background  !important;
+  box-shadow: 0 0 4px rgba(4, 4, 4, 0.67);
+  border-bottom: 2px solid @accent-primary;
 }
 
 .thread-search-bar {
@@ -33,11 +36,7 @@
   filter: contrast(1);
 }
 
-.toolbar-RootSidebar {
-  background: @background;
-  box-shadow: 0 0 4px rgba(4, 4, 4, 0.67);
-  border-bottom: 2px solid @accent-primary-dark;
-}
+.toolbar-RootSidebar {}
 
 .toolbar-MessageListSidebar {
   right: 0;

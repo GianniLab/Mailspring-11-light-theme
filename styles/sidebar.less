@@ -15,8 +15,15 @@
 }
 
 
-.outline-view .item.selected {
-  background: inherit;
+.outline-view {
+  .item.selected {
+    color: @accent-primary;
+  }
+
+  .item.selected .item-count-box.alt-count,
+  .item.selected .icon img.content-mask {
+    background: @accent-primary;
+  }
 }
 
 .flexbox-handle-horizontal div {
