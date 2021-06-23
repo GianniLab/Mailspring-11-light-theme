@@ -71,20 +71,18 @@ select {
   transition: opacity 0.3s;
   transition-delay: 0.5s;
   padding: 0;
-  width: 17px;
-  background: @accent-primary-dark;
+  width: 15px;
+  background: @background-dark-blur;
   border: none;
 
   .scrollbar-handle {
-    background-color: @accent-primary;
+    background-color: @background-lighten;
     border-radius: 10px !important;
+    margin: 2px;
     border: none;
   }
 }
 
-.scrollbar-track.dragging .scrollbar-handle {
-  background: @background;
-}
 
 .notifications {
   background-color: inherit;

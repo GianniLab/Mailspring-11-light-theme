@@ -3,7 +3,7 @@
 }
 
 #message-list {
-  box-shadow: @shadow;
+  box-shadow: 0 0 10px -3px rgba(4, 4, 4, 0.2);
   overflow: hidden;
 
   .message-item-wrap .message-item-white-wrap {
@@ -19,6 +19,28 @@
     background: @gray-light;
     border: none;
   }
+
+  .messages-wrap .scroll-region-content-inner {
+    padding: 0;
+    border: 1px solid @border-color-primary;
+  }
+
+  .message-header {
+    padding-left: 10px;
+  }
+
+  .header-toggle-control {
+    left: -3px;
+  }
+
+  .footer-reply-area-wrap {
+    margin: 0;
+
+    img.content-mask {
+      float: right;
+    }
+  }
+
 }
 
 .nylas-attachment-item {

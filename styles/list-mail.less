@@ -9,23 +9,21 @@
   }
 
   .list-item:hover {
-    background: @gray-light  !important;
+    background: @background-primary-accent  !important;
   }
 
   .list-item.focused {
 
-    background: @gray-light;
+    background: @background-primary-accent;
 
     .participants-wrapper {
       font-weight: bold;
-      color: @accent-primary-dark;
-      font-style: italic;
+      color: @accent-primary-unfocus;
     }
   }
 }
 
 .thread-list .scroll-region {
-  box-shadow: @shadow;
   overflow: hidden;
 }
 

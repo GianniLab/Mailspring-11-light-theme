@@ -14,32 +14,35 @@ https://github.com/Foundry376/Mailspring/blob/master/app/static/style/base/ui-va
 
 @gray: #dcdcdc;
 @gray-light: lighten(@gray, 12%);
-@white: #fff;
 
-@accent-primary: #50CEFF;
-@accent-primary-dark: darken(@accent-primary, 30%);
+@accent-primary: lighten(@background, 35%);
+@accent-primary-unfocus: darken(@accent-primary, 45%);
 
-@background-primary: #fff;
-@background-off-primary: #f1f1f1;
-@background-secondary: #fff;
-@background-tertiary: #f3f3f3;
+@background: #105B9E;
+@background-dark: #08355D;
+@background-dark-blur: fadeout(@background-dark, 40%);
+@background-lighten: lighten(@background, 20%);
+
+@background-primary: #eae9f3;
+@background-primary-accent: lighten(@background-primary, 5%);
+
 
 @border-color-primary: darken(@background-primary, 5%);
-@border-color-secondary: lighten(@background-secondary, 10%);
-@border-color-tertiary: lighten(@background-tertiary, 10%);
+@border-color-secondary: lighten(@background, 10%);
 @border-color-divider: @border-color-secondary;
 
 @text-color: #646464;
-@text-color-subtle: fadeout(@text-color, 20%);
+@text-color-sidebar: lighten(@text-color, 45%);
+@text-color-subtle: fadeout(@text-color, 15%);
 @text-color-very-subtle: fadeout(@text-color, 40%);
+@text-color-heading: darken(@text-color, 10%);
 @text-color-inverse: white;
 @text-color-inverse-subtle: fadeout(@text-color-inverse, 20%);
 @text-color-inverse-very-subtle: fadeout(@text-color-inverse, 50%);
-@text-color-heading: #fff;
 
 @text-color-link: @accent-primary;
-@text-color-link-hover: @accent-primary-dark;
-@text-color-link-active: @accent-primary-dark;
+@text-color-link-hover: @accent-primary-unfocus;
+@text-color-link-active: @accent-primary-unfocus;
 
 @btn-default-bg-color: lighten(@background-primary, 5%);
 @dropdown-default-bg-color: #f3f3f3;
@@ -55,8 +58,7 @@ https://github.com/Foundry376/Mailspring/blob/master/app/static/style/base/ui-va
 @toolbar-background-color: @background;
 @panel-background-color: #105B9E;
 
-@background: #08355D;
-@background-dark: #0A3D6B;
 
 
-@shadow: 0 0px 0px rgba(4, 4, 4, 0.4);
+
+@shadow: 0 0px 4px rgba(4, 4, 4, 0.67);

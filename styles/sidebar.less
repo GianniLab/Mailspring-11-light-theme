@@ -1,6 +1,6 @@
 .column-RootSidebar {
   background: @background;
-  box-shadow: 0 0 4px rgba(4, 4, 4, 0.67);
+  box-shadow: @shadow;
   z-index: 1;
   font-family: @font;
 }
@@ -9,21 +9,26 @@
 
   .item,
   .heading {
-    color: @gray;
+    color: @text-color-sidebar;
   }
 
   .item.selected {
     color: @accent-primary;
+
+    .item-count-box.alt-count,
+    .icon img.content-mask {
+      background: @accent-primary;
+    }
   }
 
-  .item img.content-mask {
-    background-color: @gray;
+  .item {
+
+    .item-count-box.alt-count,
+    img.content-mask {
+      background-color: @text-color-sidebar;
+    }
   }
 
-  .item.selected .item-count-box.alt-count,
-  .item.selected .icon img.content-mask {
-    background: @accent-primary;
-  }
 }
 
 .flexbox-handle-horizontal div {
@@ -31,5 +36,5 @@
 }
 
 .disclosure-triangle div {
-  border-left: 7px solid @gray;
+  border-left: 7px solid @text-color-sidebar;
 }
