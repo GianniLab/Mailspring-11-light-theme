@@ -3,24 +3,20 @@
   padding: 10px;
 }
 
-// .column-MessageListSidebar {
-//   box-shadow: @shadow;
-// }
-
-.sidebar-participant-picker {
-  background: #fff;
-  padding: 10px 10px 20px 10px;
-}
-
 .sidebar-section {
   margin: 0;
   background: #fff;
 }
 
-.sidebar-participant-picker select {
-  text-align-last: center;
-  border-radius: 0;
-  background: @gray-light;
+.sidebar-participant-picker {
+  background: #fff;
+  padding: 10px 10px 20px 10px;
+
+  select {
+    text-align-last: center;
+    border-radius: 0;
+    background: @gray-light;
+  }
 }
 
 .participant-profile .contact-profile-photo,
@@ -29,23 +25,24 @@
 }
 
 .contact-profile-photo {
+
   width: 50px;
   height: 50px;
   border-radius: 0;
   padding: 0;
   box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
-  background: none
-}
+  background: none;
 
-.contact-profile-photo .profile-photo {
-  height: 50px;
-  width: 50px;
-}
+  .profile-photo {
+    height: 50px;
+    width: 50px;
 
-.contact-profile-photo .profile-photo img,
-.contact-profile-photo .profile-photo .default-profile-image {
-  height: 50px;
-  width: 50px;
+    img,
+    .default-profile-image {
+      height: 50px;
+      width: 50px;
+    }
+  }
 }
 
 .related-threads .related-thread:hover {

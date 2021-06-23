@@ -1,15 +1,27 @@
-.preferences-wrap .container-preference-tabs {
-  color: @gray-light;
+.sheet-toolbar .item-back {
+  .item-back-title {
+    color: @gray;
+  }
+
+  img.content-mask {
+    background: @gray;
+  }
 }
 
-.preferences-wrap .container-preference-tabs .preferences-tabs {
-  padding-top: 0;
-}
+.preferences-wrap {
+  .container-preference-tabs {
+    color: @gray-light;
 
-.preferences-wrap .container-preference-tabs .preferences-tabs .item {
-  padding-top: 10px;
-}
+    .preferences-tabs {
+      padding-top: 0;
 
-.preferences-wrap .container-preference-tabs .preferences-tabs .item.active {
-  background: @background-dark;
+      .item {
+        padding-top: 10px;
+      }
+
+      .item.active {
+        background: @background-dark;
+      }
+    }
+  }
 }

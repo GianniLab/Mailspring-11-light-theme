@@ -3,7 +3,32 @@
 }
 
 #message-list {
-  // border-radius: 10px;
   box-shadow: @shadow;
   overflow: hidden;
+
+  .message-item-wrap .message-item-white-wrap {
+    box-shadow: 0 0 0.5px rgba(255, 255, 255, 0.28),
+      0 1px 1.5px rgba(255, 255, 255, 0.08);
+  }
+
+  .message-iframe-container iframe #inbox-html-wrapper {
+    font-weight: 300 !important;
+  }
+
+  .footer-reply-area-wrap {
+    background: @gray-light;
+    border: none;
+  }
+}
+
+.nylas-attachment-item {
+  .file-action-icon {
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+  }
+
+  .file-info-wrap {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
 }

@@ -5,19 +5,19 @@
   font-family: @font;
 }
 
-.outline-view .item,
-.outline-view .heading {
-  color: @gray;
-}
-
-.outline-view .item img.content-mask {
-  background-color: @gray;
-}
-
-
 .outline-view {
+
+  .item,
+  .heading {
+    color: @gray;
+  }
+
   .item.selected {
     color: @accent-primary;
+  }
+
+  .item img.content-mask {
+    background-color: @gray;
   }
 
   .item.selected .item-count-box.alt-count,
@@ -28,4 +28,8 @@
 
 .flexbox-handle-horizontal div {
   box-shadow: none;
+}
+
+.disclosure-triangle div {
+  border-left: 7px solid @gray;
 }

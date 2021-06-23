@@ -6,16 +6,12 @@
   min-height: fit-content;
   font-family: @font;
   height: 52px !important;
-}
 
-.sheet-toolbar-container {
-  // height: 50px !important;
-  // width: inherit !important;
-  // position: relative !important;
-  // display: block;
-  background: @background  !important;
-  box-shadow: 0 0 4px rgba(4, 4, 4, 0.67);
-  border-bottom: 2px solid @accent-primary;
+  .sheet-toolbar-container {
+    background: @background  !important;
+    box-shadow: 0 0 4px rgba(4, 4, 4, 0.67);
+    border-bottom: 2px solid @accent-primary;
+  }
 }
 
 .thread-search-bar {
@@ -26,17 +22,15 @@
   height: 30px;
   margin-top: 0;
   line-height: 2.1;
-}
 
-.thread-search-bar .suggestions {
-  margin-top: 6px;
-}
+  .suggestions {
+    margin-top: 6px;
+  }
 
-.thread-search-bar img.clear {
-  filter: contrast(1);
+  img.clear {
+    filter: contrast(1);
+  }
 }
-
-.toolbar-RootSidebar {}
 
 .toolbar-MessageListSidebar {
   right: 0;
@@ -51,14 +45,6 @@
 .toolbar-ThreadList,
 .toolbar-MessageList,
 .toolbar-MessageListSidebar {
-  height: 50px;
+  height: inherit;
   padding: 10px;
-}
-
-.sheet-toolbar .item-back .item-back-title {
-  color: @text-color;
-}
-
-.sheet-toolbar .item-back img.content-mask {
-  background-color: @text-color;
 }

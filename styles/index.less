@@ -17,6 +17,7 @@ stylesheets can call `@import "ui-variables";` and reference it.
 @import "message-info-sidebar";
 @import "preferences";
 @import "custom-icons";
+@import "composer";
 
 /*
 After changing variables to set a base for our theme, we can use
@@ -41,37 +42,12 @@ body {
   font-family: @font;
 }
 
-.thread-icon:not(.thread-icon-unread):not(.thread-icon-star) {
-  -webkit-filter: invert(100%);
-}
-
-img.content-dark {
-  -webkit-filter: invert(100%);
-}
-
-img.content-light {
-  -webkit-filter: invert(100%);
-}
-
-.mail-label {
-  -webkit-filter: contrast(110%) brightness(85%);
-}
-
-#message-list .message-item-wrap .message-item-white-wrap {
-  box-shadow: 0 0 0.5px rgba(255, 255, 255, 0.28),
-    0 1px 1.5px rgba(255, 255, 255, 0.08);
-}
-
-.thread-list .list-item:not(.unread):not(.selected):not(.focused) {
-  color: #aaa;
-}
-
 #sheet-container {
   background: @background;
 }
 
 .sheet-toolbar .btn-toolbar img.content-mask {
-  background-color: #aaa;
+  background-color: @gray;
 }
 
 button.btn.btn-toolbar:hover img {
@@ -98,12 +74,12 @@ select {
   width: 17px;
   background: @accent-primary-dark;
   border: none;
-}
 
-.scrollbar-track .scrollbar-handle {
-  background-color: @accent-primary;
-  border-radius: 10px !important;
-  border: none;
+  .scrollbar-handle {
+    background-color: @accent-primary;
+    border-radius: 10px !important;
+    border: none;
+  }
 }
 
 .scrollbar-track.dragging .scrollbar-handle {
@@ -122,12 +98,6 @@ button[title~=Archive] {
 
 element.style {
   height: 84px;
-}
-
-iframe {}
-
-#message-list .message-iframe-container iframe #inbox-html-wrapper {
-  font-weight: 300 !important;
 }
 
 body #inbox-html-wrapper {
