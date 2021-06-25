@@ -35,10 +35,14 @@ body {
   font-family: 'Google Sans' !important;
 }
 
+* {
+  // border-radius: 6px !important;
+}
+
 .column-ThreadList,
 .column-MessageList,
 .column-MessageListSidebar {
-  background: @background-primary;
+  background: @background;
   font-family: @font;
 }
 
@@ -60,9 +64,10 @@ button.btn.btn-toolbar:hover {
 }
 
 select {
-  background: #dddddd;
+  background: @background-primary-accent;
   border-radius: 6px;
   padding: 5px;
+  border-bottom: 2px solid @accent-blue;
 }
 
 .scrollbar-track {

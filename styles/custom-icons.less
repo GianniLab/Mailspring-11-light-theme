@@ -52,7 +52,15 @@ img[ alt="icon-preferences-templates.png"] {
   }
 }
 
-.toolbar-RootSidebar .btn {
+.footer-reply-area {
+  img {
+    content: url("@{baseurl}/ico-reply.png");
+  }
+}
+
+
+.toolbar-RootSidebar .btn,
+.footer-reply-area {
   img {
     zoom: 1 !important;
     -webkit-mask-image: none !important;
@@ -63,8 +71,34 @@ img[ alt="icon-preferences-templates.png"] {
     background: none !important;
 
     // New properties to be set for the images.
-    height: 24px;
+    height: 25px;
     background-size: auto !important;
   }
 
+}
+
+.signature-button-dropdown .only-item {
+  img:first-child {
+    content: url("@{baseurl}/ico-autograph.png");
+  }
+}
+
+.signature-button-dropdown .only-item {
+  img:first-of-type {
+    zoom: 1 !important;
+    -webkit-mask-image: none !important;
+    -webkit-mask-repeat: none !important;
+    mask-image: none !important;
+    mask-repeat: none !important;
+    object-position: 0 -2px !important;
+    background: none !important;
+
+    // New properties to be set for the images.
+    height: 25px;
+    background-size: auto !important;
+  }
+}
+
+.signature-button-dropdown img.content-mask {
+  display: inherit !important;
 }

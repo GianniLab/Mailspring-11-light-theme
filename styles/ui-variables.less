@@ -12,27 +12,31 @@ https://github.com/Foundry376/Mailspring/blob/master/app/static/style/base/ui-va
 
 @font: 'Google Sans';
 
-@gray: #dcdcdc;
+@gray: #a5a5a5;
 @gray-light: lighten(@gray, 12%);
 
-@accent-primary: lighten(@background, 35%);
+@accent-primary: darken(@background, 35%);
 @accent-primary-unfocus: darken(@accent-primary, 45%);
+@accent-blue: #24A9E8;
 
-@background: #105B9E;
-@background-dark: #08355D;
+@background: #f8f8f8;
+@background-dark: darken(@background, 2%);
 @background-dark-blur: fadeout(@background-dark, 40%);
 @background-lighten: lighten(@background, 20%);
 
-@background-primary: #eae9f3;
+@background-primary: #f8f8f8;
 @background-primary-accent: lighten(@background-primary, 5%);
+@background-primary-unfocus: lighten(@background-primary, 2%);
 
 
 @border-color-primary: darken(@background-primary, 5%);
 @border-color-secondary: lighten(@background, 10%);
 @border-color-divider: @border-color-secondary;
 
-@text-color: #646464;
-@text-color-sidebar: lighten(@text-color, 45%);
+@border-radius: 6px !important;
+
+@text-color: #2e2e2e;
+@text-color-sidebar: lighten(@text-color, 15%);
 @text-color-subtle: fadeout(@text-color, 15%);
 @text-color-very-subtle: fadeout(@text-color, 40%);
 @text-color-heading: darken(@text-color, 10%);
@@ -56,9 +60,9 @@ https://github.com/Foundry376/Mailspring/blob/master/app/static/style/base/ui-va
 @list-focused-color: @text-color;
 
 @toolbar-background-color: @background;
-@panel-background-color: #105B9E;
+@panel-background-color: @background;
 
 
 
 
-@shadow: 0 0px 4px rgba(4, 4, 4, 0.67);
+@shadow: 0 0px 35px -15px rgba(4, 4, 4, 0.67);

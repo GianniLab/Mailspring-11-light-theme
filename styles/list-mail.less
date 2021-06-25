@@ -23,8 +23,13 @@
   }
 }
 
+body.is-blurred .list-container .list-item.focused {
+  background: @background-primary-unfocus;
+}
+
 .thread-list .scroll-region {
   overflow: hidden;
+  z-index: 0;
 }
 
 .thread-list .list-item,
@@ -37,7 +42,7 @@
 .thread-list,
 .draft-list {
   .unread:not(.focused):not(.selected):not(.next-is-selected) {
-    border-bottom: 1px solid #dcdcdc;
+    border-bottom: 1px solid @gray;
   }
 
   .thread-icon.thread-icon-unread,
