@@ -32,12 +32,13 @@
   width: 50px;
   height: 50px;
   padding: 0;
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+  box-shadow: none;
   background: none;
 
   .profile-photo {
     height: 50px;
     width: 50px;
+    border-radius: @border-radius;
 
     img,
     .default-profile-image {
@@ -47,7 +48,11 @@
   }
 }
 
-.related-threads .related-thread:hover {
-  background: initial;
-  color: @text-color-link-hover;
+.related-threads {
+  border-top: none;
+
+  .related-thread:hover {
+    background: initial;
+    color: @text-color-link-hover;
+  }
 }

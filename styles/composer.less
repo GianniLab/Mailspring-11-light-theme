@@ -1,9 +1,11 @@
 .sheet,
-.RichEditor-toolbar .inner {
+.RichEditor-toolbar .inner,
+.signature-button-dropdown,
+.composer-participant-field .only-item {
   background: @background-primary-accent  !important;
 }
 
-.only-item,
+
 .tokenizing-field .token,
 .tokenizing-field-wrap .tokenizing-field .token {
   box-shadow: 0 0 0 1px @border-color-primary  !important;
@@ -11,7 +13,7 @@
 }
 
 .composer-participant-field:after {
-  border-bottom: 1px solid @gray ;
+  border-bottom: 1px solid @border-color-primary ;
 }
 
 .signature-button-dropdown .only-item {
@@ -26,5 +28,14 @@
 .sheet-toolbar .item-container .window-title {
   line-height: inherit;
   top: 15px;
-  color: @accent-primary;
+  color: @text-color;
+}
+
+.button-dropdown .secondary-items {
+  background: @background;
+}
+
+.tokenizing-field .token.selected,
+.tokenizing-field .token.dragging {
+  color: @text-color;
 }

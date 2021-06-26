@@ -35,10 +35,6 @@ body {
   font-family: 'Google Sans' !important;
 }
 
-* {
-  // border-radius: 6px !important;
-}
-
 .column-ThreadList,
 .column-MessageList,
 .column-MessageListSidebar {
@@ -50,22 +46,9 @@ body {
   background: @background;
 }
 
-.sheet-toolbar .btn-toolbar img.content-mask {
-  background-color: @gray;
-}
-
-button.btn.btn-toolbar:hover img {
-  background-color: @accent-primary;
-  filter: none;
-}
-
-button.btn.btn-toolbar:hover {
-  background: inherit !important;
-}
-
 select {
   background: @background-primary-accent;
-  border-radius: 6px;
+  border-radius: @border-radius;
   padding: 5px;
   border-bottom: 2px solid @accent-blue;
 }
@@ -94,14 +77,9 @@ select {
   box-shadow: none;
 }
 
-button[title~=Archive] {
-  color: #000;
-  background: #333333;
-}
-
-element.style {
-  height: 84px;
-}
+// element.style {
+//   height: 84px;
+// }
 
 body #inbox-html-wrapper {
   font-weight: 100 !important;

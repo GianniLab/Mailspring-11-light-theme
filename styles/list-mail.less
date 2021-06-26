@@ -17,7 +17,7 @@
     background: @background-primary-accent;
 
     .participants-wrapper {
-      font-weight: bold;
+
       color: @accent-primary-unfocus;
     }
   }
@@ -35,14 +35,14 @@ body.is-blurred .list-container .list-item.focused {
 .thread-list .list-item,
 .draft-list .list-item {
   background: @background-primary;
-  border-bottom: 1px solid @gray;
+  border-bottom: 1px solid @border-color-primary;
   padding: 7px 0;
 }
 
 .thread-list,
 .draft-list {
   .unread:not(.focused):not(.selected):not(.next-is-selected) {
-    border-bottom: 1px solid @gray;
+    border-bottom: 1px solid @border-color-primary;
   }
 
   .thread-icon.thread-icon-unread,

@@ -11,41 +11,54 @@
     background: @background-dark  !important;
     // border-bottom: 2px solid @accent-primary;
   }
-}
 
-.thread-search-bar {
-  text-align: center;
-  box-shadow: none;
-  border: 1px solid #dcdcdc;
-  height: 30px;
-  margin-top: 0;
-  line-height: 2.1;
-  background: @background-primary-accent;
-  border-radius: @border-radius;
-  border-bottom: 2px solid @accent-blue;
-
-  .suggestions {
-    margin-top: 6px;
+  .btn-toolbar img.content-mask {
+    background-color: @text-color;
   }
 
-  img.clear {
-    filter: contrast(1);
+  button.btn.btn-toolbar:hover img {
+    background-color: @accent-blue;
+    filter: none;
   }
-}
 
-.toolbar-MessageListSidebar {
-  right: 0;
-  left: auto !important;
-}
+  button.btn.btn-toolbar:hover {
+    background: inherit !important;
+  }
 
-.toolbar-MessageList {
-  padding-right: 20px;
-}
+  .thread-search-bar {
+    text-align: center;
+    box-shadow: none;
+    border: 1px solid @border-color-primary;
+    height: 30px;
+    margin-top: 0;
+    line-height: 2.1;
+    background: @background-primary-accent;
+    border-radius: @border-radius;
+    border-bottom: 2px solid @accent-blue;
 
-.toolbar-RootSidebar,
-.toolbar-ThreadList,
-.toolbar-MessageList,
-.toolbar-MessageListSidebar {
-  height: inherit;
-  padding: 10px;
+    .suggestions {
+      margin-top: 6px;
+    }
+
+    img.clear {
+      filter: contrast(1);
+    }
+  }
+
+  .toolbar-MessageListSidebar {
+    right: 0;
+    left: auto !important;
+  }
+
+  .toolbar-MessageList {
+    padding-right: 20px;
+  }
+
+  .toolbar-RootSidebar,
+  .toolbar-ThreadList,
+  .toolbar-MessageList,
+  .toolbar-MessageListSidebar {
+    height: inherit;
+    padding: 10px;
+  }
 }
