@@ -6,6 +6,17 @@
   overflow: hidden;
   background: @background-primary;
 
+  .message-subject-wrap {
+    margin: 0 10px 10px;
+    line-height: inherit;
+    padding: 10px 12px 2px;
+
+    .message-subject {
+      position: relative;
+      top: 2px;
+    }
+  }
+
   .message-item-wrap {
     padding-bottom: 0;
     border-top: 1px solid;
@@ -34,8 +45,9 @@
 
   .messages-wrap .scroll-region-content-inner {
     padding: 0;
-    border: 1px solid @border-color-primary;
+    border: 0px solid @border-color-primary;
     background: @background-primary-accent;
+    border-radius: @border-radius;
   }
 
   .message-header {
@@ -54,6 +66,13 @@
     img.content-mask {
       float: right;
     }
+  }
+
+  .send-reminders-header {
+    background: rgba(90, 49, 225, 0.35);
+    border-radius: @border-radius;
+    margin: 0 10px 10px;
+    border-bottom: 0;
   }
 
 }

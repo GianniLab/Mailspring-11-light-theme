@@ -1,10 +1,10 @@
 {
-  "name": "11",
+  "name": "11-light",
   "title": "11",
   "displayName": "11",
   "theme": "ui",
   "version": "0.1.0",
-  "description": "A great dark theme to start your own themes.",
+  "description": "A light theme for Mailspring",
   "license": "MIT",
   "engines": {
     "mailspring": "*"

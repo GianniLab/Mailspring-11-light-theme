@@ -50,6 +50,7 @@ select {
   background: @background-primary-accent;
   border-radius: @border-radius;
   padding: 5px;
+  border-color: @background-primary-accent;
   border-bottom: 2px solid @accent-blue;
 }
 
@@ -59,14 +60,13 @@ select {
   transition: opacity 0.3s;
   transition-delay: 0.5s;
   padding: 0;
-  width: 15px;
-  background: @background-dark-blur;
+  width: 3px;
+  background: @background-dark;
   border: none;
 
   .scrollbar-handle {
-    background-color: @background-lighten;
+    background-color: @accent-blue;
     border-radius: 10px !important;
-    margin: 2px;
     border: none;
   }
 }

@@ -46,9 +46,93 @@ img[ alt="icon-preferences-templates.png"] {
 }
 
 // .btn.btn-toolbar[title="Delete"]
-.btn.btn-toolbar[title="Crea nuovo messaggio"] {
-  img {
+.btn.btn-toolbar {
+  img[alt="toolbar-compose.png"] {
     content: url("@{baseurl}/ico-composing-mail.png");
+  }
+}
+
+.btn.btn-toolbar {
+  img[alt="toolbar-archive.png"] {
+    content: url("@{baseurl}/ico-archive.png");
+  }
+}
+
+.btn.btn-toolbar {
+  img[alt="toolbar-spam.png"] {
+    content: url("@{baseurl}/ico-spam.png");
+  }
+}
+
+.btn.btn-toolbar {
+  img[alt="toolbar-not-spam.png"] {
+    content: url("@{baseurl}/ico-spam.png");
+  }
+}
+
+.btn.btn-toolbar {
+  img[alt="toolbar-trash.png"] {
+    content: url("@{baseurl}/ico-trash.png");
+  }
+}
+
+.btn.btn-toolbar {
+  img[alt="toolbar-star.png"] {
+    content: url("@{baseurl}/ico-add-stars.png");
+  }
+}
+
+.btn.btn-toolbar {
+  img[alt="toolbar-star-selected.png"] {
+    content: url("@{baseurl}/ico-off-stars.png");
+  }
+}
+
+.btn.btn-toolbar {
+  img[alt="toolbar-markasunread.png"] {
+    content: url("@{baseurl}/ico-not-read.png");
+  }
+}
+
+.btn.btn-toolbar {
+  img[alt="toolbar-movetofolder.png"] {
+    content: url("@{baseurl}/ico-move-to-folder.png");
+  }
+}
+
+.btn.btn-toolbar {
+  img[alt="toolbar-tag.png"] {
+    content: url("@{baseurl}/ico-add-tag.png");
+  }
+}
+
+.btn.btn-toolbar {
+  img[alt="ic-toolbar-native-reminder.png"] {
+    content: url("@{baseurl}/ico-add-reminder.png");
+  }
+}
+
+.btn.btn-toolbar {
+  img[alt="toolbar-snooze.png"] {
+    content: url("@{baseurl}/ico-schedule.png");
+  }
+}
+
+.btn.btn-toolbar {
+  img[alt="ic-toolbar-native-share.png"] {
+    content: url("@{baseurl}/ico-share-message.png");
+  }
+}
+
+.btn.btn-toolbar {
+  img[alt="toolbar-person-sidebar.png"] {
+    content: url("@{baseurl}/ico-member.png");
+  }
+}
+
+.btn.btn-toolbar {
+  img[alt="windows-menu-icon.png"] {
+    content: url("@{baseurl}/ico-menu.png");
   }
 }
 
@@ -58,11 +142,60 @@ img[ alt="icon-preferences-templates.png"] {
   }
 }
 
+.thread-list .list-item {
+  .list-column-HoverActions .action.action-snooze {
+    background: url("@{baseurl}/ico-schedule.png") no-repeat;
+  }
+
+  .list-column-HoverActions .action.action-archive {
+    background: url("@{baseurl}/ico-archive.png") no-repeat;
+  }
+
+  .list-column-HoverActions .action.action-trash {
+    background: url("@{baseurl}/ico-trash.png") no-repeat;
+  }
+}
+
+.thread-list .list-item.focused:hover {
+  .list-column-HoverActions .action.action-snooze {
+    background: url("@{baseurl}/ico-schedule.png") no-repeat !important;
+  }
+
+  .list-column-HoverActions .action.action-archive {
+    background: url("@{baseurl}/ico-archive.png") no-repeat !important;
+  }
+
+  .list-column-HoverActions .action.action-trash {
+    background: url("@{baseurl}/ico-trash.png") no-repeat !important;
+  }
+}
+
+.thread-list .list-item.focused:hover .list-column-HoverActions .inner .action {
+  filter: none;
+}
+
+.thread-list .list-item.focused:hover .list-column-HoverActions .inner {
+  background: none;
+}
+
+.thread-list .list-item .list-column-HoverActions .action {
+  display: inline-block;
+  background-size: 100%;
+  zoom: 0.5;
+  width: 81px;
+  height: 51px;
+  margin: 9px 16px 0 16px;
+}
 
 .toolbar-RootSidebar .btn,
+.message-toolbar-items .btn,
+.toolbar-MessageList .btn,
+.toolbar-MessageListSidebar .btn,
+.toolbar-ThreadList .btn,
+.toolbar-menu-control .btn,
 .footer-reply-area {
   img {
-    zoom: 1 !important;
+    zoom: 0.7 !important;
     -webkit-mask-image: none !important;
     -webkit-mask-repeat: none !important;
     mask-image: none !important;
