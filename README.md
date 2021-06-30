@@ -1,5 +1,6 @@
-# Mailspring 11 Theme
+# Mailspring 11 Theme - beta
 
+<i><small>*work in progress</small></i><br>
 Simple Theme for the [Mailspring](http://www.getmailspring.com/) email client.
 
 <img src="/screenshot/Mailspring · theme - 1.png" />
