@@ -1,4 +1,4 @@
-# Mailspring 11 Theme - beta
+# Mailspring 11 light Theme - beta
 
 
 Simple Theme for the [Mailspring](http://www.getmailspring.com/) email client.
