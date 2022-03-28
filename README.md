@@ -22,7 +22,7 @@ Simple Theme for the [Mailspring](http://www.getmailspring.com/) email client.
 ## Linux OS users to apply custom icon
 - Uncomment the string path `// @baseurl:"/home/%USER_PROFILE%/.config/Mailspring/packages/11-light/img";`  on `custom-icon.less`,
 - replace `%USER_PROFILE%` with your profile username;
-- and comment or delete the windows path `@baseurl: "../../../../../../Roaming/Mailspring/packages/11-light/img";
+- and comment or delete the windows path `@baseurl: "../../../../../../Roaming/Mailspring/packages/11-light/img"`;
 - Thanks to [@KarkanAlzwayed](https://github.com/KarkanAlzwayed)
 
 ## Used Icon by <a target="_blank" href="https://icons8.com">Icons8</a>
